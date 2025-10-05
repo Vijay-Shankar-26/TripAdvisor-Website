@@ -8,7 +8,7 @@ This project replicates the layout and design of the official TripAdvisor homepa
 🖥️ Live Demo
 
 👉 View Live Project
- (Replace this link with your GitHub Pages URL after deployment)
+ https://vijay-shankar-26.github.io/TripAdvisor-Website/
 
 🚀 Features
 
@@ -112,4 +112,4 @@ You’re free to modify and use it for learning or portfolio purposes.
 
 👨‍💻 Vj
 📧 vijayshankar0244@gmail.com
-🌐 GitHub Profile
+🌐 Vijay-Shankar-26
