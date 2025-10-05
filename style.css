@@ -1,0 +1,681 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar1 {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.navbar__s2 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.navbar__s2:hover{
+    transform: scale(1.03);
+}
+.navbar__s3 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+
+}
+
+.navbar__s3 i{
+    cursor: pointer;
+}
+
+.navbar__s3 p{
+    cursor: pointer;
+}
+
+.navbar__s3 button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.navbar__s3 button:hover{
+    cursor: pointer;
+    background-color: #7a7a7a;
+}
+.navbar2 {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.navbar3 {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    
+}
+
+.navbar3:hover{
+    transform: scale(1.03);
+}
+
+.navbar3__search {
+    display: flex;
+    gap: 5px;
+}
+
+.navbar3__search:hover{
+    transform: scale(1.03);
+}
+
+.navbar3__hotels {
+    display: flex;
+    gap: 5px;
+}
+
+.navbar3__hotels:hover{
+    transform: scale(1.03);
+}
+
+.navbar3__things {
+    display: flex;
+    gap: 5px;
+}
+
+.navbar3__things:hover{
+    transform: scale(1.03);
+}
+
+.navbar3__rest {
+    display: flex;
+    gap: 5px;
+}
+
+.navbar3__rest:hover{
+    transform: scale(1.03);
+}
+
+.navbar3__flight {
+    display: flex;
+    gap: 5px;
+}
+
+.navbar3__flight:hover{
+    transform: scale(1.03);
+}
+
+.navbar3__holiday {
+    display: flex;
+    gap: 5px;
+}
+
+.navbar3__holiday:hover{
+    transform: scale(1.03);
+}
+
+.navbar4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 50px;
+    padding: 5px;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-container i {
+    color: #000;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.search-container input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 12px 15px;
+    color: #333;
+}
+
+.search-container input::placeholder {
+    color: #7a7a7a;
+}
+
+.search-container button {
+    background-color: #00D352;
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 5px;
+}
+
+.search-container button:hover {
+    background-color: #34e0a1;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1020px;
+    margin: auto;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Banner text overlay */
+.banner {
+    position: absolute;
+    bottom: 40px; /* distance from bottom of image */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.4); /* subtle overlay behind text */
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 750px;
+}
+
+.banner h1 {
+    margin: 10px 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.banner h4 {
+    margin: 5px 0 20px;
+    font-weight: normal;
+}
+
+.banner button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.banner button:hover {
+    background-color: #f0f0f0;
+}
+
+.restaurant-section {
+    text-align: center;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.restaurant-section h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.restaurant-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Layout for the images */
+.restaurant-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card that holds each image + title */
+.restaurant-card {
+    position: relative;
+    width: 220px;
+    height: 270px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: scale(1.03);
+}
+
+/* Image Styling */
+.restaurant-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Title Overlay */
+.restaurant-card h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.section-text {
+    justify-content: center;
+    margin-bottom: 40px;
+    padding-left: 19%;
+}
+
+.section-text h2 {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.section-text p {
+    color: #555;
+    font-size: 14px;
+}
+
+.explore__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.trip-card {
+    padding: 5px;
+    background-color: white;
+    width: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image styling */
+.trip-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Headings */
+.trip-card h3 {
+    font-size: 14px;
+    padding: 10px;
+    margin: 0;
+    color: #222;
+}
+
+/* Rating and Price */
+.trip-card p {
+    font-size: 13px;
+    padding: 0 10px 10px;
+    color: #00754a;
+}
+
+.footer {
+  background: #f2f2f2;
+  padding: 40px 30px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ---------- Top Section ---------- */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  margin: 10px 15px;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Bottom Section ---------- */
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-links {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.small {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.footer-settings {
+  margin-bottom: 10px;
+}
+
+.footer-settings select {
+  padding: 6px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+
+
+/* -------------------------------
+   RESPONSIVE DESIGN IMPROVEMENTS
+--------------------------------*/
+
+/* ====== Tablet View (600px–1023px) ====== */
+@media (max-width: 1023px) and (min-width: 600px) {
+
+  /* Navbar 1 */
+  .navbar1 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .navbar__s2 {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .navbar__s3 p {
+    display: none;
+  }
+
+  /* Navbar 3 (category icons) */
+  .navbar3 {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .navbar3 div {
+    flex: 1 1 30%;
+    justify-content: center;
+  }
+
+
+  /* Restaurant Cards */
+  .restaurant-card {
+    width: 45%;
+    height: 220px;
+  }
+
+  /* Trip cards */
+  .trip-card {
+    width: 45%;
+  }
+
+  .section-text {
+    padding-left: 10%;
+  }
+}
+
+
+/* ====== Mobile View (≤599px) ====== */
+
+@media screen and (min-width:768px) {
+    .logo {
+        width: 180px;
+    }
+}
+
+@media (max-width: 599px) {
+
+  /* Navbar 1 */
+  .navbar1 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .navbar__s2 {
+    display: none; /* hide text nav on small screens */
+  }
+
+  .navbar__s3 {
+    align-self: flex-end;
+  }
+
+  .navbar__s3 button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  /* Navbar 2 (Heading) */
+  .navbar2 h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  /* Navbar 3 (icon nav) */
+  .navbar3 {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar3 div {
+    flex: 1 1 45%;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  /* Search Bar */
+  .navbar4 {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .search-container {
+    flex-direction: row;
+    padding: 5px 10px;
+  }
+
+  .search-container input {
+    font-size: 14px;
+  }
+
+  .search-container button {
+    font-size: 13px;
+    padding: 8px 15px;
+  }
+
+
+  /* Restaurant Section */
+  .restaurant-section h3 {
+    font-size: 18px;
+  }
+
+  .restaurant-card {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* Trip Cards */
+  .explore__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trip-card {
+    width: 90%;
+  }
+
+  .section-text {
+    padding-left: 5%;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons i {
+    font-size: 20px;
+    margin: 8px;
+  }
+}
+
+
+/* ====== Large Screens (≥1200px) ====== */
+@media (min-width: 1200px) {
+  .restaurant-card {
+    width: 240px;
+  }
+
+  .trip-card {
+    width: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        width: 90%;
+        padding: 15px;
+        bottom: 20px;
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner h4 {
+        font-size: 1rem;
+    }
+
+    .banner button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
